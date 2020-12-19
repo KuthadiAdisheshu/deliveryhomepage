@@ -1,0 +1,40 @@
+<!-- <div class= "container" style="margin-top: 10%;margin-left: 10%;"></div>
+<div class="card m-auto" style="width:35% ;background-color:rgb(255, 255, 255);border-radius: 5%;">
+    <div class="card-body" style="border-radius: 30%;">
+    <h1 class="card-title" style="text-align: center;color: black;">PAYMENTS</h1><br>
+    <h1>AMOUNT DUE    : 85855rs</h1><br><br>
+   <h2> <label for="phone">AMOUNT RECIEVED :<input type="AMOUNT RECIEVED" name="AMOUNT" placeholder= inRupees>
+   </label></h2>
+   <button type="button" class="btn btn-dark" style="margin: 30% 30% 0% 45%;"><h1>DONE</h1></button>
+    </div>
+    </div>
+     -->
+     
+<div class="container ">
+    <div class="card col-12">
+        <div class="card-body ">
+          <h2 class="card-title col-12">PAYMENTS</h2>
+         <form [formGroup]="done" (ngSubmit)="doneSubmit()">
+          <label class="one">AMOUNT RECIEVED</label><span class="sp1">:</span><span class="sp2">7500rs</span><br>
+          <div class="row">
+              
+                <label class="two">AMOUNT DUE</label><span class="sp3">:</span><span class="sp3">7500rs</span><br>
+            
+                <!-- <input type="number" class="form-control col-xs-2" formControlName="Rupees" placeholder="inRupees" > -->
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">UPI Payment</button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">G PAY</a></li>
+                  <li><a href="#">Phone Pay</a></li>
+                  <li><a href="#">Paytm</a></li>
+                  <li><a href="#">Net Banking</a></li>
+                  
+                </ul>
+                <button type="submit" class="btn btn-dark"  >DONE</button>
+              </div>
+          <!-- <button type="submit" class="btn btn-dark"  >DONE</button> -->
+        </form>
+        </div>
+    </div>
+</div>
